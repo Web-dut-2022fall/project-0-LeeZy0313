@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #all{
+            position: fixed;
+            left:35%;
+            top:30%;
+        }
+        #google_img{
+            position: relative;
+            left:35%;
+            bottom:10px;
+            width:100px;
+        }
+        input[type="text"]{
+            width:300px;
+            height:40px;
+        }
+        #search{
+            float:left;
+        }
+        #lucky{
+            float:right;
+        }
+        nav{
+            text-align: right;
+        }
+        a{
+            margin-right:20px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="google_img.html">图片搜索</a>
+    <a href="AdvancedSearch.html">高级搜索</a>
+</nav>
+<div id="all">
+    <img src="photos/google_logo.webp" id="google_img">
+    <form action="https://www.google.com/search" id="form">
+        <input type="text" name="q"/>
+    </form>
+    <input type="button" value="Google Search" class="button" id="search">
+    <input type="button" value="I'm Feeling Lucky" class="button" id="lucky">
+</div>
+</body>
+<script>
+    var search=document.getElementById("search");
+    var form=document.getElementById("form");
+    var lucky=document.getElementById("lucky")
+    search.onclick=function () {
+        form.submit()
+    }
+    lucky.onclick=function () {
+        window.location.href="https://www.google.com/doodles"
+    }
+</script>
+</html>

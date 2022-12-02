@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    form{
+        position:fixed;
+        bottom:100px;
+    }
+    input[type="text"]{
+        width:250px;
+        height:20px;
+    }
+    label{
+        line-height: 30px;
+        display:block;
+    }
+    nav{
+        text-align: right;
+    }
+    img{
+        width:200px;
+    }
+</style>
+<body>
+<nav>
+    <a href="google_img.html">图片搜索</a>
+    <a href="google.html">搜索</a>
+</nav>
+<img src="photos/photo.png">
+<form action="https://www.google.com/search" >
+    <label>
+        <input type="text" name="as_q" placeholder="相关词汇">
+    </label>
+    <label>
+        <input type="text" name="as_epq" placeholder="准确词语或短语">
+    </label>
+    <label>
+        <input type="text" name="as_oq" placeholder="所有词汇">
+    </label>
+    <label>
+        <input type="text" name="as_eq" placeholder="无词汇">
+    </label>
+    <input type="submit" value="Advanced Search">
+</form>
+</body>
+</html>
